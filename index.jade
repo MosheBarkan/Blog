@@ -1,0 +1,29 @@
+//output:index.html
+doctype html
+html
+	head
+		script(type="text/javascript" src="main.js")
+		link(rel="stylesheet" type="text/css" href="All.css")
+		link(rel="stylesheet" type="text/css" href="animate.css")
+	body
+			.inside
+				h1(id="h1" onmouseenter="hovering('h1')" onmouseout="out('h1')" onselectstart="return false") Moshe Barkan
+				h1(id="h2" onmouseenter="hovering('h2')"  onmouseout="out('h2')" onselectstart="return false") Front-End Web Developer 
+				a(href="mailto:moshiko226@hotmail.com")
+					h1(id="h3" onmouseenter="hovering('h3')"  onmouseout="out('h3')" ) Moshiko226@hotmail.com
+				a(href="https://www.github.com/MosheBarkan")
+					h1(id="h3" onmouseenter="hovering('h3')"  onmouseout="out('h3')" ) GitHub
+			.box 		
+				h2(onselectstart="return false")
+					u Menu
+				.inBox
+					h2(style="color: red" onselectstart="return false") Home
+					h2(onselectstart="return false") About
+					h2(onselectstart="return false") Contact Me
+					a(href="project.html")
+						h2(onselectstart="return false") FastPokeMap Scanner
+			.newMenu(onclick="newMenuClick()")
+				.bar(id="bar1")
+				.bar(id="bar2")
+				.bar(id="bar3") 
+		.TESTING1
