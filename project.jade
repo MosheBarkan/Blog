@@ -3,26 +3,22 @@ doctype html
 html
 	head
 		script(type="text/javascript" src="main.js")
-		link(rel="stylesheet" type="text/css" href="All.css")
+		link(rel="stylesheet" type="text/css" href="index.css")
 	body
-	.actualBody
-			h1(id="download") <u>FastPokeMap.com Scanner</u>
-			.firstPara
-				p FastPokeMap-Scanner is a script that signicintly increases <br> scan radius in the popular website <span class="fast"><a href="http://www.fastpokemap.com">FastPokeMap.com</a> </span>
-			.dec
-				h1(id="download") How To Download
-				p(id="gitHub")<span class="fast"><a href="https://github.com/MosheBarkan/FastPokeMon.com-Scanner">Click here </a></span> to get to the download section in GitHub 
-
-	.box		
-		h2(onselectstart="return false")
-			u Menu
-		.inBox
-			a(href="index.html")
-				h2(onselectstart="return false") Home
-			h2(onselectstart="return false") About
-			h2(onselectstart="return false") Contact Me
-			h2(style="color: red" onselectstart="return false") FastPokeMap Scanner
-	.newMenu(onclick="newMenuClick()")
+	.sidePanel(id="panelID")
+		h2#Menu Menu
+		a(id="menulink" href="index.html")
+			h2 Home
+		a(id="menulink" href="project.html")
+			h2(style="color:red") Projects
+	.newMenu(id="newMenu" onclick="newMenuClick()")
 		.bar(id="bar1")
 		.bar(id="bar2")
 		.bar(id="bar3")
+	.actualBody
+			h1(id="forPad2") FastPokeMap.com Scanner
+			.firstPara
+				p FastPokeMap-Scanner is a script that significantly increase <br> scan radius in the popular website <a href="http://www.fastpokemap.com">FastPokeMap.com</a>
+			.dec
+				h1(id="download") How To Download
+				p(id="gitHub")<a href="https://github.com/MosheBarkan/FastPokeMon.com-Scanner">Click here</a> to get to the download section in GitHub 

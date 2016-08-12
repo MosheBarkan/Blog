@@ -29,7 +29,7 @@ h3 {
     opacity: 0.25;
 }
 body {
-    padding-top: 10%;
+
 }
 h1:hover {
     animation: pulse 0.25s linear 1 forwards;
@@ -78,7 +78,7 @@ h1:hover {
     border: 1px solid;
     border-radius: 100px;
     text-align: center;
-} 
+}
 .box:hover {
     animation: good 0.45s linear 1 forwards;
 }
@@ -163,6 +163,14 @@ p {
 
 .newMenu{
     width: 35px;
+    position: relative;
+    top: 5%;
+}
+.sidePanel {
+  width: 100px;
+  height: 100vh;
+  background-color: grey;
+  position: fixed;
 }
 .bar {
     width: 30px;

@@ -2,32 +2,21 @@
 <html>
   <head>
     <script type="text/javascript" src="main.js"></script>
-    <link rel="stylesheet" type="text/css" href="All.css">
-    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
-  <body>
-    <div class="inside">
-      <h1 id="h1" onmouseenter="hovering('h1')" onmouseout="out('h1')" onselectstart="return false">Moshe Barkan</h1>
-      <h1 id="h2" onmouseenter="hovering('h2')" onmouseout="out('h2')" onselectstart="return false">Front-End Web Developer </h1><a href="mailto:moshiko226@hotmail.com">
-        <h1 id="h3" onmouseenter="hovering('h3')" onmouseout="out('h3')">Moshiko226@hotmail.com</h1></a><a href="https://www.github.com/MosheBarkan">
-        <h1 id="h3" onmouseenter="hovering('h3')" onmouseout="out('h3')">GitHub</h1></a>
-    </div>
-    <div class="box">		
-      <h2 onselectstart="return false">
-        <u>Menu</u>
-      </h2>
-      <div class="inBox">
-        <h2 style="color: red" onselectstart="return false">Home</h2>
-        <h2 onselectstart="return false">About</h2>
-        <h2 onselectstart="return false">Contact Me</h2><a href="project.html">
-          <h2 onselectstart="return false">FastPokeMap Scanner</h2></a>
-      </div>
-    </div>
-    <div onclick="newMenuClick()" class="newMenu">
-      <div id="bar1" class="bar"></div>
-      <div id="bar2" class="bar"></div>
-      <div id="bar3" class="bar"> </div>
-    </div>
-  </body>
-  <div class="TESTING1"></div>
+  <body></body>
+  <div id="panelID" class="sidePanel">
+    <h2 id="Menu">Menu</h2><a id="menulink" href="index.html">
+  </div>
+  <div id="newMenu" onclick="newMenuClick()" class="newMenu">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </div>
+  <div class="actualBody">
+    <h1 id="forPad" onselectstart="return false">Moshe Barkan</h1>
+    <h1 onselectstart="return false">Front-End Web Developer </h1><a href="mailto:moshiko226@hotmail.com">
+      <h1 onselectstart="return false">Moshiko226@hotmail.com</h1></a><a href="https://www.github.com/MosheBarkan">
+      <h1 onselectstart="return false">GitHub	</h1></a>
+  </div>
 </html>
