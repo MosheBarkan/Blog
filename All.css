@@ -1,184 +1,124 @@
 html {
-    background-color: rgb(73, 0, 0);
     font-family: "Glober Free", "Glober Free Thin";
     animation: background 10s linear infinite;
     cursor: default;
+}
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    z-index: -2;
+}
+.newMenu {
+    width: 36px;
+    height: 28px;
+    left: 4px;
+    top: 4px;
+    right: 37px;
+    bottom: 30px;
+    position: fixed;
+    text-align: center;
+    transition: all 0.1s linear;
+    transform-origin: center;
+    cursor: pointer;
+}
+.newMenu:hover {
+  transform: scale(1.15);
+}
+.sidePanel {
+    height: 100%;
+    width: 250px;
+    background-color: rgb(99, 130, 162);
+    position: fixed;
+    opacity: 0;
+    box-shadow: 0px 0px 20px 1px rgb(255, 255, 255);
+    z-index: 0;
+    transform: translateX(-300px);
+    text-align: center;
+}
+#menulink {
+    text-decoration: none;
+    color: black;
+    transition: all 0.1s linear;
+}
+#menulink:hover {
+  color: rgb(255, 115, 0);
+}
+a {
+    text-decoration: none;
 }
 h1 {
     color: white;
     text-align: center;
 }
-.inBox {
-    visibility: hidden;
-    padding-top: 2%;
-}
-.inside {
-  width: 382px;
-  height: 219px;
-  margin: 0 auto;
-
+#Menu {
+    text-decoration: underline;
 }
 h2 {
-    color: black;
-    opacity: 0;
-    visibility: hidden;
-    position: relative;
+    transform: translate(20px, 25px);
+    z-index: 1;
 }
-h3 {
-    color: white;
-    opacity: 0.25;
-}
-body {
-
-}
-h1:hover {
-    animation: pulse 0.25s linear 1 forwards;
-}
-@keyframes ActualHovering {
-    0% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(-6px);
-    }
-}
-@keyframes background {
-    0%, 100% {
-        background-color: rgb(73, 0, 0);
-    }
-    12.5% {
-        background-color: rgb(71, 0, 73);
-    }
-    25% {
-        background-color: rgb(6, 0, 73);
-    }
-    37.5% {
-        background-color: rgb(0, 73, 73);
-    }
-    50% {
-        background-color: rgb(0, 73, 3);
-    }
-    62.5% {
-        background-color: rgb(71, 73, 0);
-    }
-    75% {
-        background-color: rgb(73, 39, 0);
-    }
-    87.5% {
-        background-color: rgb(73, 0, 0)
-    }
-}
-.box {
-    height: 30px;
-    width: 30px;
-    background: white;
-    position: fixed;
-    top: 7.5px;
-    left: 5px;
-    border: 1px solid;
-    border-radius: 100px;
-    text-align: center;
-}
-.box:hover {
-    animation: good 0.45s linear 1 forwards;
-}
-.box:hover h2 {
-    animation: makevisible 0.45s linear 0.25s 1 forwards;
-    visibility: visible;
-}
-@keyframes good {
-    0% {
-        width: 30px;
-        border-radius: 100px;
-    }
-    50%, 100% {
-        width: 200px;
-        height: 30px;
-        border-radius: 20px;
-    }
-    100% {
-        height: 300px;
-        width: 200px;
-        border-radius: 20px;
-    }
-}
-@keyframes makevisible {
-    25% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-a {
-    text-decoration: none;
-    color: currentColor;
-    font-weight: bold;
-}
-.firstPara {
-    position: relative;
-    margin: 0 auto;
-}
-p {
-    color: white;
-    font-size: 25px;
-}
-#download {
-    opacity: 1;
-    text-decoration: underline;
-    color: rgb(255, 107, 0);
-}
-.secondPara {
-    position: relative;
-    margin: 0 auto;
-}
-#gitHub {
-    color: white;
-    opacity: 1;
-    visibility: visible;
+#Fast {
+    transform: translate(60px, 25px);
+    width: 60px;
 }
 .actualBody {
-    text-align: center;
-    border: black solid;
-    background-color: rgb(76, 160, 207);
-    border-radius: 80px;
-    width: 700px;
-    height: 300px;
-    margin: 0 auto;
+  width: 583px;
+  height: 322px;
+  margin: 0 auto;
+  margin-top: 10%;
+  background-color: transparent;
+  display: table;
+  text-align: center;
+  border-radius: 50px;
+  border: 5px white solid;
 }
-.fast {
-    transition: 0.2s;
-}
-.fast:hover {
-    animation: little 0.2s linear 1 forwards;
-}
-@keyframes little {
-    0% {
-        color: currentColor;
-    }
-    100% {
-        color: rgb(255, 99, 0);
-    }
+.actualBody a>h1:hover{
+  color: rgb(255, 99, 0);
 }
 
-.newMenu{
-    width: 35px;
-    position: relative;
-    top: 5%;
+.actualBody h1 {
+    transition: all 0.1s linear;
 }
-.sidePanel {
-  width: 100px;
-  height: 100vh;
-  background-color: grey;
-  position: fixed;
+#forPad,#forPad2 {
+  padding-top: 35px;
+}
+#download,#forPad2 {
+  text-decoration: underline;
+  color: rgb(255, 92, 0);
 }
 .bar {
     width: 30px;
     height: 5px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin-top: 3px;
     border-radius: 10px;
     transform-origin: left;
+    pointer-events: none;
+    margin-left: 2px;
+
+}
+
+@keyframes come {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50px);
+        opacity: 1;
+    }
+}
+@keyframes comeBack {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50px);
+        opacity: 1;
+    }
 }
 @keyframes rotateToDown {
     0% {
@@ -193,12 +133,12 @@ p {
         transform: translateX();
         opacity: 1;
     }
-    50%{
-      transform: translateX(500px);
-      opacity: 0
+    50% {
+        transform: translateX(-500px);
+        opacity: 0
     }
     100% {
-        transform: translateX(1000px);
+        transform: translateX(-1000px);
         opacity: 0;
     }
 }
@@ -223,12 +163,12 @@ p {
         transform: translateX();
         opacity: 1;
     }
-    50%{
-      transform: translateX(500px);
-      opacity: 0
+    50% {
+        transform: translateX(-500px);
+        opacity: 0
     }
     100% {
-        transform: translateX(1000px);
+        transform: translateX(-1000px);
         opacity: 0;
     }
 }
@@ -238,5 +178,48 @@ p {
     }
     100% {
         transform: rotate(-33deg);
+    }
+}
+p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(219, 219, 219);
+}
+p a {
+    color: white;
+    font-weight: bolder;
+    transition: all 0.1s linear;
+    transform-origin: center;
+}
+p a:hover {
+    color: rgb(255, 130, 0);
+}
+
+
+@keyframes background {
+    0%, 100% {
+        background-color: rgb(142, 55, 0);
+    }
+    12.5% {
+        background-color: rgb(71, 0, 73);
+    }
+    25% {
+        background-color: rgb(6, 0, 73);
+    }
+    37.5% {
+        background-color: rgb(0, 73, 73);
+    }
+    50% {
+        background-color: rgb(0, 73, 3);
+    }
+    62.5% {
+        background-color: rgb(71, 73, 0);
+    }
+    75% {
+        background-color: rgb(73, 39, 0);
+    }
+    87.5% {
+        background-color: rgb(142, 55, 0);
     }
 }

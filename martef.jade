@@ -1,0 +1,24 @@
+//output:martef.html
+doctype html
+html
+  head
+    script(type="text/javascript" src="martef.js")
+    link(rel="stylesheet" type="text/css" href="all.css")
+    link(rel="stylesheet" type="text/css" href="martef.css")
+    script(type="text/javascript" src="main.js")
+    
+  body
+  .sidePanel(id="panelID")
+    h2#Menu Menu
+    a(id="menulink" href="index.html")
+      h2 Home
+    a(id="menulink" href="project.html")
+      h2 Projects
+    a(id="menulink" href="martef.html")
+      h2(style="color:red") Martef
+  .newMenu(id="newMenu" onclick="newMenuClick()")
+    .bar(id="bar1")
+    .bar(id="bar2")
+    .bar(id="bar3")
+
+  .button(onselectstart="return false") Button
