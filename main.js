@@ -14,7 +14,6 @@ function setup() {
 
 
 function newMenuClick() {
-    console.log("click");
     setup();
     if (pressed === false) {
         //bar1
@@ -38,7 +37,3 @@ function newMenuClick() {
         pressed = false;
     }
 }
-
-console.log("setup start");
-setup();
-console.log("setup done");

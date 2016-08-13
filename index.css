@@ -1,5 +1,4 @@
 html {
-    background-color: rgba(45, 73, 121, 1);
     font-family: "Glober Free", "Glober Free Thin";
     animation: background 10s linear infinite;
     cursor: default;
@@ -63,7 +62,6 @@ h2 {
 #Fast {
     transform: translate(60px, 25px);
     width: 60px;
-    marin
 }
 .actualBody {
   width: 583px;
@@ -102,14 +100,6 @@ h2 {
 
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scaleX(2);
-  }
-}
 @keyframes come {
     0% {
         transform: translateX(-300px);
@@ -204,4 +194,32 @@ p a {
 }
 p a:hover {
     color: rgb(255, 130, 0);
+}
+
+
+@keyframes background {
+    0%, 100% {
+        background-color: rgb(142, 55, 0);
+    }
+    12.5% {
+        background-color: rgb(71, 0, 73);
+    }
+    25% {
+        background-color: rgb(6, 0, 73);
+    }
+    37.5% {
+        background-color: rgb(0, 73, 73);
+    }
+    50% {
+        background-color: rgb(0, 73, 3);
+    }
+    62.5% {
+        background-color: rgb(71, 73, 0);
+    }
+    75% {
+        background-color: rgb(73, 39, 0);
+    }
+    87.5% {
+        background-color: rgb(142, 55, 0);
+    }
 }
