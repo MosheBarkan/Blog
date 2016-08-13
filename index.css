@@ -12,9 +12,20 @@ html, body {
     z-index: -2;
 }
 .newMenu {
-    width: 35px;
-    transform: translate(10%, 10%);
+    width: 36px;
+    height: 28px;
+    left: 4px;
+    top: 4px;
+    right: 37px;
+    bottom: 30px;
     position: fixed;
+    text-align: center;
+    transition: all 0.1s linear;
+    transform-origin: center;
+    cursor: pointer;
+}
+.newMenu:hover {
+  transform: scale(1.15);
 }
 .sidePanel {
     height: 100%;
@@ -30,6 +41,10 @@ html, body {
 #menulink {
     text-decoration: none;
     color: black;
+    transition: all 0.1s linear;
+}
+#menulink:hover {
+  color: rgb(255, 115, 0);
 }
 a {
     text-decoration: none;
@@ -61,6 +76,13 @@ h2 {
   border-radius: 50px;
   border: 5px white solid;
 }
+.actualBody a>h1:hover{
+  color: rgb(255, 99, 0);
+}
+
+.actualBody h1 {
+    transition: all 0.1s linear;
+}
 #forPad,#forPad2 {
   padding-top: 35px;
 }
@@ -75,8 +97,19 @@ h2 {
     margin-top: 3px;
     border-radius: 10px;
     transform-origin: left;
+    pointer-events: none;
+    margin-left: 2px;
+
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scaleX(2);
+  }
+}
 @keyframes come {
     0% {
         transform: translateX(-300px);
@@ -166,8 +199,9 @@ p {
 p a {
     color: white;
     font-weight: bolder;
-    transition: 0.5s;
+    transition: all 0.1s linear;
+    transform-origin: center;
 }
 p a:hover {
-    color: red;
+    color: rgb(255, 130, 0);
 }

@@ -5,12 +5,11 @@ var bar3;
 var newMenu;
 
 function setup() {
-   bar1 = document.getElementById('bar1');
-   bar2 = document.getElementById('bar2');
-   bar3 = document.getElementById('bar3');
-   sidePanel = document.getElementById('panelID');
-   newMenu = document.getElementById('newMenu');
-
+    bar1 = document.getElementById('bar1');
+    bar2 = document.getElementById('bar2');
+    bar3 = document.getElementById('bar3');
+    sidePanel = document.getElementById('panelID');
+    newMenu = document.getElementById('newMenu');
 }
 
 
@@ -39,3 +38,7 @@ function newMenuClick() {
         pressed = false;
     }
 }
+
+console.log("setup start");
+setup();
+console.log("setup done");
