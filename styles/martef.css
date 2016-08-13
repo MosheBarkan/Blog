@@ -10,13 +10,24 @@
   border: none;
   border-radius: 15px;
   box-shadow: 0px 2px 0px 2px black;
-  margin: 0 auto;
+
   transition: all 0.1s linear;
   font-weight: bolder;
-  margin-top: 250px;
+
 }
 .button:active {
   background-color: #3e8e41;
   box-shadow: 0 2px #666;
   transform: translateY(4px);
+}
+
+.forForm {
+  display: flex;
+  position: relative;
+  top: 200px;
+  margin-left:40%;
+}
+input {
+margin-right: 5px;
+font-size: 20px;
 }

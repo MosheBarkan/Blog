@@ -2,10 +2,10 @@
 doctype html
 html
   head
-    script(type="text/javascript" src="martef.js")
-    link(rel="stylesheet" type="text/css" href="all.css")
-    link(rel="stylesheet" type="text/css" href="martef.css")
-    script(type="text/javascript" src="main.js")
+    
+    link(rel="stylesheet" type="text/css" href="styles/all.css")
+    link(rel="stylesheet" type="text/css" href="styles/martef.css")
+    script(src="js/main.js")
     
   body
   .sidePanel(id="panelID")
@@ -20,5 +20,8 @@ html
     .bar(id="bar1")
     .bar(id="bar2")
     .bar(id="bar3")
-
-  .button(onselectstart="return false") Button
+  .forForm
+    input(id="textBox")
+    .button(id="martefButton" onselectstart="return false") Button
+  script(src="js/jquery3.js")
+  script(src="js/martef.js")
