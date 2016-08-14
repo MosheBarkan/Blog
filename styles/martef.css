@@ -10,29 +10,24 @@
   border: none;
   border-radius: 15px;
   box-shadow: 0px 2px 0px 2px black;
-
   transition: all 0.1s linear;
-  font-weight: bolder;
-
-}
-.button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 2px #666;
-  transform: translateY(4px);
-}
+  font-weight: bolder; }
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px); }
 
 .forForm {
   display: flex;
   position: relative;
   top: 200px;
-  margin-left:40%;
-}
-input {
-margin-right: 5px;
-font-size: 15px;
-outline: none;
-}
+  margin-left: 40%;
+  height: 40px; }
 
+input {
+  margin-right: 5px;
+  font-size: 15px;
+  outline: none; }
 
 .popup {
   padding: 34px 34px;
@@ -44,18 +39,15 @@ outline: none;
   font-weight: bolder;
   box-shadow: 0px 0px 7px 3px white;
   transition: all 0.1s linear;
-  animation: testing2 0.1s linear 3 alternate;
-}
-.popup:hover {
-  background-color: #3b8a0a;
-  cursor: pointer;
-}
+  animation: testing2 0.1s linear 3 alternate; }
+  .popup:hover {
+    background-color: #60A933;
+    cursor: pointer; }
 
 @keyframes testing2 {
   0% {
-    transform: translateX(0);
-  }
+    transform: translateX(0); }
   100% {
-    transform: translateX(7px);
-  }
-}
+    transform: translateX(7px); } }
+
+/*# sourceMappingURL=martef.css.map */
