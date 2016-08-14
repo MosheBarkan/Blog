@@ -29,5 +29,33 @@
 }
 input {
 margin-right: 5px;
-font-size: 20px;
+font-size: 15px;
+outline: none;
+}
+
+
+.popup {
+  padding: 34px 34px;
+  position: fixed;
+  background-color: #46b700;
+  right: 1%;
+  top: 2%;
+  border-radius: 2px;
+  font-weight: bolder;
+  box-shadow: 0px 0px 7px 3px white;
+  transition: all 0.1s linear;
+  animation: testing2 0.1s linear 3 alternate;
+}
+.popup:hover {
+  background-color: #3b8a0a;
+  cursor: pointer;
+}
+
+@keyframes testing2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(7px);
+  }
 }

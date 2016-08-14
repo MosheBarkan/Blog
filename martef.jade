@@ -1,27 +1,35 @@
-//output:martef.html
+// output:martef.html
 doctype html
 html
   head
-    
-    link(rel="stylesheet" type="text/css" href="styles/all.css")
-    link(rel="stylesheet" type="text/css" href="styles/martef.css")
-    script(src="js/main.js")
-    
+    link(rel='stylesheet', type='text/css', href='styles/all.css')
+    |     
+    link(rel='stylesheet', type='text/css', href='styles/martef.css')
+  |   
   body
-  .sidePanel(id="panelID")
-    h2#Menu Menu
-    a(id="menulink" href="index.html")
-      h2 Home
-    a(id="menulink" href="project.html")
-      h2 Projects
-    a(id="menulink" href="martef.html")
-      h2(style="color:red") Martef
-  .newMenu(id="newMenu" onclick="newMenuClick()")
-    .bar(id="bar1")
-    .bar(id="bar2")
-    .bar(id="bar3")
-  .forForm
-    input(id="textBox")
-    .button(id="martefButton" onselectstart="return false") Button
-  script(src="js/jquery3.js")
-  script(src="js/martef.js")
+    #panelID.sidePanel
+      h2#Menu Menu
+      a#menulink(href='index.html')
+        h2 Home
+      a#menulink(href='project.html')
+        h2 Projects
+      a#menulink(href='martef.html')
+        h2(style='color:red') Martef
+    |     
+    #newMenu.newMenu
+      #bar1.bar
+      |       
+      #bar2.bar
+      |       
+      #bar3.bar
+    |     
+    .forForm
+      input#textBox
+      |       
+      #martefButton.button(onselectstart='return false') Save
+    |     
+    script(src='js/jquery3.js')
+    |     
+    script(src='js/martef.js')
+    |     
+    script(src='js/main.js')

@@ -37,3 +37,6 @@ function newMenuClick() {
         pressed = false;
     }
 }
+
+
+$(".newMenu").click(newMenuClick);

@@ -1,26 +1,43 @@
 //output:project.html
 doctype html
 html
-	head
-		script(type="text/javascript" src="js/main.js")
-		link(rel="stylesheet" type="text/css" href="styles/all.css")
-	body
-	.sidePanel(id="panelID")
-		h2#Menu Menu
-		a(id="menulink" href="index.html")
-			h2 Home
-		a(id="menulink" href="project.html")
-			h2(style="color:red") Projects
-		a(id="menulink" href="martef.html")
-			h2 Martef
-	.newMenu(id="newMenu" onclick="newMenuClick()")
-		.bar(id="bar1")
-		.bar(id="bar2")
-		.bar(id="bar3")
-	.actualBody
-			h1(id="forPad2") FastPokeMap.com Scanner
-			.firstPara
-				p FastPokeMap-Scanner is a script that significantly increase <br> scan radius in the popular website <a href="http://www.fastpokemap.com">FastPokeMap.com</a>
-			.dec
-				h1(id="download") How To Download
-				p(id="gitHub")<a href="https://github.com/MosheBarkan/FastPokeMon.com-Scanner">Click here</a> to get to the download section in GitHub 
+  head
+    link(rel='stylesheet', type='text/css', href='styles/all.css')
+  |   
+  body
+    #panelID.sidePanel
+      h2#Menu Menu
+      a#menulink(href='index.html')
+        h2 Home
+      a#menulink(href='project.html')
+        h2(style='color:red') Projects
+      a#menulink(href='martef.html')
+        h2 Martef
+    |   
+    #newMenu.newMenu
+      #bar1.bar
+      |     
+      #bar2.bar
+      |     
+      #bar3.bar
+    |   
+    .actualBody
+      h1#forPad2 FastPokeMap.com Scanner
+      |     
+      .firstPara
+        p
+          | FastPokeMap-Scanner is a script that significantly increase 
+          br
+          |  scan radius in the popular website 
+          a(href='http://www.fastpokemap.com') FastPokeMap.com
+      |     
+      .dec
+        h1#download How To Download
+        |       
+        p#gitHub
+          a(href='https://github.com/MosheBarkan/FastPokeMon.com-Scanner') Click here
+          |  to get to the download section in GitHub
+    |   
+    script(src='js/jquery3.js')
+    |   
+    script(src='js/main.js')

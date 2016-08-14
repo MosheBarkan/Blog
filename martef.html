@@ -1,26 +1,28 @@
-<!DOCTYPE html>
+
+<!-- output:martef.html--><!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles/all.css">
+    <link rel="stylesheet" type="text/css" href="styles/all.css">    
     <link rel="stylesheet" type="text/css" href="styles/martef.css">
+  </head>  
+  <body>
+    <div id="panelID" class="sidePanel">
+      <h2 id="Menu">Menu</h2><a id="menulink" href="index.html">
+        <h2>Home</h2></a><a id="menulink" href="project.html">
+        <h2>Projects</h2></a><a id="menulink" href="martef.html">
+        <h2 style="color:red">Martef</h2></a>
+    </div>    
+    <div id="newMenu" class="newMenu">
+      <div id="bar1" class="bar"></div>      
+      <div id="bar2" class="bar"></div>      
+      <div id="bar3" class="bar"></div>
+    </div>    
+    <div class="forForm">
+      <input id="textBox">      
+      <div id="martefButton" onselectstart="return false" class="button">Save</div>
+    </div>    
+    <script src="js/jquery3.js"></script>    
+    <script src="js/martef.js"></script>    
     <script src="js/main.js"></script>
-  </head>
-  <body></body>
-  <div id="panelID" class="sidePanel">
-    <h2 id="Menu">Menu</h2><a id="menulink" href="index.html">
-      <h2>Home</h2></a><a id="menulink" href="project.html">
-      <h2>Projects</h2></a><a id="menulink" href="martef.html">
-      <h2 style="color:red">Martef</h2></a>
-  </div>
-  <div id="newMenu" onclick="newMenuClick()" class="newMenu">
-    <div id="bar1" class="bar"></div>
-    <div id="bar2" class="bar"></div>
-    <div id="bar3" class="bar"></div>
-  </div>
-  <div class="forForm">
-    <input id="textBox">
-    <div id="martefButton" onselectstart="return false" class="button">Button</div>
-  </div>
-  <script src="js/jquery3.js"></script>
-  <script src="js/martef.js"></script>
+  </body>
 </html>

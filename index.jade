@@ -1,26 +1,36 @@
-//output:index.html
+// output:index.html
 doctype html
 html
-	head
-		script(type="text/javascript" src="js/main.js")
-		link(rel="stylesheet" type="text/css" href="styles/all.css")
-	body
-	.sidePanel(id="panelID")
-		h2#Menu Menu
-		a(id="menulink" href="index.html")
-			h2(style="color:red") Home
-		a(id="menulink" href="project.html")
-			h2 Projects
-		a(id="menulink" href="martef.html")
-			h2 Martef
-	.newMenu(id="newMenu" onclick="newMenuClick()")
-		.bar(id="bar1")
-		.bar(id="bar2")
-		.bar(id="bar3")
-	.actualBody
-		h1(id="forPad" onselectstart="return false") Moshe Barkan
-		h1(onselectstart="return false") Front-End Web Developer 
-		a(href="mailto:moshiko226@hotmail.com")
-			h1(onselectstart="return false") Moshiko226@hotmail.com
-		a(href="https://www.github.com/MosheBarkan")
-			h1(onselectstart="return false") GitHub	
+  head
+    link(rel='stylesheet', type='text/css', href='styles/all.css')
+  |   
+  body
+  |   
+  #panelID.sidePanel
+    h2#Menu Menu
+    a#menulink(href='index.html')
+      h2(style='color:red') Home
+    a#menulink(href='project.html')
+      h2 Projects
+    a#menulink(href='martef.html')
+      h2 Martef
+  |   
+  #newMenu.newMenu
+    #bar1.bar
+    |     
+    #bar2.bar
+    |     
+    #bar3.bar
+  |   
+  .actualBody
+    h1#forPad(onselectstart='return false') Moshe Barkan
+    |     
+    h1(onselectstart='return false') Front-End Web Developer 
+    a(href='mailto:moshiko226@hotmail.com')
+      h1(onselectstart='return false') Moshiko226@hotmail.com
+    a(href='https://www.github.com/MosheBarkan')
+      h1(onselectstart='return false') GitHub&#x9;
+  |   
+  script(src='js/jquery3.js')
+  |   
+  script(src='js/main.js')
