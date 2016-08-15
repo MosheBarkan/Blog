@@ -7,23 +7,24 @@ var newPerson = [];
 
 $("#martefButton").click(function(){
     var innerText = $("#textBox").val();
-    if (innerText.length > 0) {
-       if(!AlreadyIn(newPerson,innerText)) {
-       dieAlive();
+    if (innerText.length > 0 && !AlreadyIn(newPerson,innerText)) {
+       
+       dieAlive("class","popup");
        newPerson[forIndex] = new Person(innerText,18);
        addElement("Added a new person named : " + newPerson[forIndex].name);
        forIndex++;
        $("#textBox").val('');
-      }
-      else {
+    }
+    else {
+        if(AlreadyIn(newPerson,innerText)) {
         console.log(("This value is already inside the database"));
-        dieAlive();
+        dieAlive("class","popup");
         addElement("Taken Already");
-        $(".popup").css("background-color" , "red");
-
+        $(".popup").css("background-color" , "red"); 
       }
+    }
   }
-});
+);
 
 function printAll() {
   if(isObjectEmpty(newPerson)) {
@@ -65,12 +66,24 @@ function addElement(text) {
   newElement.id = "popupID";
   newElement.innerHTML = text;
   document.body.appendChild(newElement);
-  $("#popupID").click(function() {$("#popupID").remove();});
+  $("#popupID").click(function() {fadeAway("#popupID",200);});
 }
 
-function dieAlive() {
-  if($(".popup").length > 0) {
-    $(".popup").remove();
+function dieAlive(classOrID,nameOfClassOrID) {
+  switch(classOrID.toLowerCase()) {
+    case "class":
+      let toRemove1 = "." + nameOfClassOrID;
+      if($(toRemove1).length > 0) {
+       $(toRemove1).remove();
+      }
+      break;
+
+    case "id":
+      let toRemove2 = "#" + nameOfClassOrID;
+      if($(toRemove2).length > 0) {
+       $(toRemove2).remove();
+      }
+      break;
   }
 }
 
@@ -79,3 +92,53 @@ $("#textBox").keypress(function(event) {
   $("#martefButton").click();
  }
 });
+
+
+class Box {
+  constructor(height,width) {
+    this.height = height;
+    this.width = width;
+  }
+
+  get heykef() {
+    return(this.height*2 + this.width*2);
+  }
+
+  get shetah() {
+    return(this.height * this.width);
+  }
+};
+
+var ourBox = {};
+$(".newButton").click(function() {
+  var BoxWidth = $("#widthBox").val();
+  var BoxHeight = $("#heightBox").val();
+  if(BoxWidth.length > 0 && BoxHeight.length > 0 ){
+    console.log(BoxHeight + " " + " " + BoxWidth);
+    ourBox = new Box(BoxHeight,BoxWidth);
+    console.log(ourBox);
+    dieAlive("ID","boxInfo");
+    createAnyElement('div',"Height: " + BoxHeight + " Width: " + BoxWidth,'boxInfo');
+  }
+});
+
+
+function createAnyElement(elementName,TextWithingTheElement,elementID) {
+  var createAnyElementVar = document.createElement(elementName);
+  createAnyElementVar.innerHTML = TextWithingTheElement;
+  createAnyElementVar.id = elementID;
+  document.body.appendChild(createAnyElementVar);
+  createAnyElementVar.addEventListener("click",newElementClick);
+}
+
+function newElementClick(e) {
+  fadeAway(this,200);
+}
+
+function fadeAway(inJquery,durationInMS) {
+  $(inJquery).animate( {
+    opacity: 0
+  },durationInMS,function() {
+    $(inJquery).remove();
+  });
+}

@@ -24,7 +24,7 @@
   margin-left: 40%;
   height: 40px; }
 
-input {
+#textBox {
   margin-right: 5px;
   font-size: 15px;
   outline: none; }
@@ -49,5 +49,60 @@ input {
     transform: translateX(0); }
   100% {
     transform: translateX(7px); } }
+.box {
+  padding: 10px 10px;
+  position: absolute;
+  border: 2px black solid;
+  border-radius: 10px;
+  width: 150px;
+  margin: 0 43%;
+  top: 300px;
+  right: 0px;
+  left: 0px;
+  text-align: center; }
+
+#heightBox, #widthBox {
+  width: 100%; }
+
+h3 {
+  margin: 0; }
+
+.newButton {
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 10px 4px;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 2px 0px 2px black;
+  transition: all 0.1s linear;
+  font-weight: bolder;
+  text-align: center; }
+  .newButton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px); }
+
+h1 {
+  margin: 0 0; }
+
+#boxInfo {
+  width: 300px;
+  text-align: center;
+  padding: 10px 4px;
+  background-color: #000000;
+  color: #89eb8a;
+  margin: 0 auto;
+  font-weight: bolder;
+  border-radius: 31px;
+  box-shadow: 0px 0px 0px 2px #77dc78;
+  opacity: 1; }
+  #boxInfo:hover {
+    background-color: #3f3f3f;
+    cursor: pointer; }
 
 /*# sourceMappingURL=martef.css.map */
